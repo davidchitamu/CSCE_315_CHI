@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Rubik', sans-serif;
+}
+
+.sea {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(ellipse at bottom, #0055bb 0, #0077dd 50%, #00bbee 75%);
+    z-index: -1;
+}
+
+.title-section {
+    position: relative;
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+}
+.title-welcome {
+    font-size: 2rem;
+    padding: 0.1em 0.3em;
+    margin: 0 auto;
+    margin-bottom: 0.5em;
+    text-align: center;
+    width: fit-content;
+    border: solid 2px black;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    position: relative;
+    background-color: #f6cf92;
+}
+.ribbon-left {
+    z-index: -1;
+    position: absolute;
+    top: 0.25em;
+    left: -1em;
+    width: 1.5em;
+    height: 1.3em;
+    border: solid 2px black;
+    border-top-left-radius: 5px;
+    background-color: #dbc094;
+}
+.ribbon-right {
+    z-index: -1;
+    position: absolute;
+    top: 0.25em;
+    right: -1em;
+    width: 1.5em;
+    height: 1.3em;
+    border: solid 2px black;
+    border-top-right-radius: 5px;
+    background-color: #dbc094;
+}
+.title-section .title-name {
+    font-size: 3.5rem;
+}
+.title-section .title-name .title-highlight {
+    color: #dd0000;
+}
+
+.button-disabled {
+    background-color: #eeeeee;
+    opacity: 0.4;
+}
+.button-disabled a {
+    cursor: default;
+}
+.button {
+    background-color: #eeeeee;
+}
+
+.navbar {
+    display: flex;
+    gap: 1.5em;
+}
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+.navbar > .button {
+    border: solid 2px black;
+    border-radius: 2px;
+    padding: 0.5em;
+    cursor: pointer;
+}
+.navbar > .button-disabled {
+    border: solid 2px black;
+    border-radius: 2px;
+    padding: 0.5em;
+}
+.navbar > .button:hover {
+    background-color: #aaaaaa;
+    transition: background-color 0.2s ease;
+}
+.button:hover > a {
+    color: #aa0000;
+    transition: color 0.2s ease;
+}
+
+.island {
+    margin-top: 2.5em;
+}
+
+.boat {
+    width: 5em;
+    height: 2.4em;
+    border: solid 2px black;
+    border-top-right-radius: 75%;
+    border-bottom-right-radius: 75%;
+    background-color: #efefef;
+    position: absolute;
+}
+
+.interior {
+    position: absolute;
+    top: 0.2em;
+    left: 0.2em;
+    width: 4em;
+    height: 2em;
+    border-top-right-radius: 60%;
+    border-bottom-right-radius: 60%;
+    background-color: rgb(155, 90, 90);
+}
+
+.engine {
+    position: absolute;
+    top: 0.6em;
+    left: -1em;
+    width: 1em;
+    height: 1.2em;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: #555555;   
+}
+
+.engine-ripple {
+    position: absolute;
+    top: 0.6em;
+    left: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.engine-ripple span {
+    position: absolute;
+    border: 2px solid white;
+    border-radius: 50%;
+    animation: ripple 5s linear infinite;
+    animation-delay: calc(-1s * var(--i));
+    z-index: -1;
+}
+@keyframes ripple {
+    0% {
+        width: 0px;
+        height: 0px;
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        width: 500px;
+        height: 500px;
+        opacity: 0;
+    }
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    gap: 0.2em;
+}
+.footer > .button {
+    cursor: pointer;
+    padding: 0.3em 0.5em 0.7em;
+    border: solid 2px black;
+    border-bottom: none;
+    border-radius: 2px;
+}
+.footer > .button:hover {
+    background-color: #aaaaaa;
+    transition: background-color 0.2s ease;
+}
+.footer a {
+    text-decoration: none;
+    color: black;
+}
+.footer > .button:hover > a {
+    color: #aa0000;
+    transition: color 0.2s ease;
+}
