@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles.css"></link>
+    <link rel="stylesheet" type="text/css" href="../styles.css" id="mainStyleSheet"></link>
     <title>David Chi</title>
 </head>
 <body>
@@ -22,27 +22,35 @@
         <div class="button-disabled">
             <a href="../landing-page/index.html">HOME</a>
         </div>
-        <div class="button">
+        <div class="button" onclick="location.href = '../technical-page/index.html';">
             <a href="../technical-page/index.html">PROJECTS</a>
         </div>
-        <div class="button">
+        <div class="button" onclick="location.href = '../qual-page/index.html';">
             <a href="../qual-page/index.html">QUALIFICATIONS</a>
         </div>
-        <div class="button">
+        <div class="button" onclick="location.href = '../service-page/index.html';">
             <a href="../service-page/index.html">SERVICE</a>
         </div>
-        <div class="button">
+        <div class="button" onclick="location.href = '../gpt-page/index.html';">
             <a href="../gpt-page/index.html">FUN FACTS</a>
         </div>
     </div>
 
     <div class="content">
-        <div class="island">     
-            <img src="../static/island.png">
+        <div class="landing-island-container">     
+            <img class="island" src="../static/island.png">
+            <div class="personal-photo-container">
+                <img class="personal-photo" src="../static/selfie.jpg">
+            </div>
+            <p class="about-me">
+                <strong>Howdy</strong>! I'm David, an undergrad at Texas A&M studying
+                <i>Comp. Sci</i> and <i>Applied Math</i>. My interests lie in using
+                ML/AI to solve problems in <i>chemistry</i> and <i>biology</i>.
+            </p>
         </div>
     </div>
 
-    <div class="boat" id="playable" style="right: 25px; bottom: 250px;">
+    <!-- <div class="boat" id="playable" style="right: 25px; bottom: 250px;">
         <div class="interior"></div>
         <div class="window"></div>
         <div class="engine">
@@ -58,7 +66,7 @@
                 <span style="--i:9;"></span>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div class="footer">
         <div class="button">
@@ -70,7 +78,13 @@
         <div class="button">
             <a href="https://github.com/davidchi31415">GitHub</a>
         </div>
+        <div class="button">
+            <button onclick="toggleStyleSheet()">
+                Switch Style
+            </button>
+        </div>
     </div>
     <script src="index.js"></script>
+    <script src="../toggle_style.js"></script>
 </body>
 </html>

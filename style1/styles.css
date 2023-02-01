@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
-html, body {
-    width: 100%;
-    height: 100%;
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: fit-content;
+    min-height: 100%;
+    background-image: radial-gradient(ellipse at bottom, #0055bb 0, #0077dd 50%, #00bbee 75%);
 }
 
 body {
@@ -15,13 +20,13 @@ body {
     font-family: 'Rubik', sans-serif;
 }
 
-.sea {
+/* .sea {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 200vh;
     background-image: radial-gradient(ellipse at bottom, #0055bb 0, #0077dd 50%, #00bbee 75%);
     z-index: -1;
-}
+} */
 
 .title-section {
     position: relative;
@@ -80,6 +85,15 @@ body {
 .button {
     background-color: #eeeeee;
 }
+.button button {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
 
 .navbar {
     display: flex;
@@ -102,15 +116,70 @@ body {
 }
 .navbar > .button:hover {
     background-color: #aaaaaa;
+    color: #aa0000;
     transition: background-color 0.2s ease;
 }
-.button:hover > a {
+.navbar > .button:hover > a {
     color: #aa0000;
     transition: color 0.2s ease;
 }
 
-.island {
+.island-container {
     margin-top: 2.5em;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    position: relative;
+
+    padding: 1em;
+    margin: 3.5em 1em 3.5em;
+    background-color: #f6cf92;
+    border: solid 2px black;
+    border-radius: 5px;
+    max-width: 50em;
+}
+
+.island-container ul {
+    padding: 1em;
+}
+
+.landing-island-container {
+    margin-top: 2.5em;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    position: relative;
+}
+
+.island-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 0.5em;
+}
+
+.personal-photo-container {
+    border: solid 5px black;
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    overflow: hidden;
+
+    position: absolute;
+    top: 95px;
+    left: 165px;
+}
+
+.personal-photo {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.about-me {
+    position: absolute;
+    top: 250px;
+    left: 120px;
+    max-width: 250px;
 }
 
 .boat {
@@ -179,7 +248,7 @@ body {
 }
 
 .footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     display: flex;
     gap: 0.2em;
@@ -193,6 +262,7 @@ body {
 }
 .footer > .button:hover {
     background-color: #aaaaaa;
+    color: #aa0000;
     transition: background-color 0.2s ease;
 }
 .footer a {

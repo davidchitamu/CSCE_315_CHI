@@ -4,36 +4,107 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles.css"></link>
+    <link rel="stylesheet" type="text/css" href="../styles.css" id="mainStyleSheet"></link>
     <title>David Chi</title>
 </head>
 <body>
-    <h3>Who Is</h3>
-    <h1>David Chi?</h1>
+    <div class="sea"></div>
+    <div class="title-section">
+        <div class="title-welcome">
+            <div class="ribbon-left"></div>
+            WHO IS
+            <div class="ribbon-right"></div>
+        </div>
+        <div class="title-name">DAVID<span class="title-highlight"> CHI?</span></div>
+    </div>
 
     <div class="navbar">
-        <div>
+        <div class="button" onclick="location.href = '../landing-page/index.html';">
             <a href="../landing-page/index.html">HOME</a>
         </div>
-        <div>
+        <div class="button" onclick="location.href = '../technical-page/index.html';">
             <a href="../technical-page/index.html">PROJECTS</a>
         </div>
-        <div>
+        <div class="button" onclick="location.href = '../qual-page/index.html';">
             <a href="../qual-page/index.html">QUALIFICATIONS</a>
         </div>
-        <div>
+        <div class="button" onclick="location.href = '../service-page/index.html';">
             <a href="../service-page/index.html">SERVICE</a>
         </div>
-        <div>
-            <a href="../gpt-page/index.html">ABOUT ME</a>
+        <div class="button-disabled">
+            <a href="../gpt-page/index.html">FUN FACTS</a>
         </div>
     </div>
 
+    <div class="island-container">
+        <div class="content">
+            <style>
+                h1 {
+                text-align: center;
+                font-size: 36px;
+                font-family: Arial, sans-serif;
+                }
+                p {
+                font-size: 18px;
+                font-family: Arial, sans-serif;
+                margin: 10px;
+                }
+            </style>
+            <h1>Fun Facts About David Chi</h1>
+            <p>
+            <strong>I play piano and guitar:</strong> 
+            Playing musical instruments is one of my passions. I have been playing the piano for many years and recently picked up the guitar. I find playing music to be a great way to relieve stress and express myself creatively.
+            </p>
+            <p>
+            <strong>I enjoy running and weightlifting:</strong>
+            I believe that physical fitness is important for overall health and well-being. I enjoy pushing myself in both running and weightlifting, and love the feeling of accomplishment after a good workout.
+            </p>
+            <p>
+            <strong>I am the youngest of three children:</strong>
+            Growing up as the youngest in my family has shaped who I am today. I learned the value of hard work and determination from my older siblings, and always strive to make them proud.
+            </p>
+            <p>
+            <strong>I used ChatGPT to generate this page:</strong>
+            This page was created using OpenAI's ChatGPT language model. I was impressed by its ability to understand and respond to my request in a human-like manner.
+            </p>
+        </div>
+    </div>
+
+    <!-- <div class="boat" id="playable" style="right: 25px; bottom: 250px;">
+        <div class="interior"></div>
+        <div class="window"></div>
+        <div class="engine">
+            <div class="engine-ripple">
+                <span style="--i:1;"></span>
+                <span style="--i:2;"></span>
+                <span style="--i:3;"></span>
+                <span style="--i:4;"></span>
+                <span style="--i:5;"></span>
+                <span style="--i:6;"></span>
+                <span style="--i:7;"></span>
+                <span style="--i:8;"></span>
+                <span style="--i:9;"></span>
+            </div>
+        </div>
+    </div> -->
+
     <div class="footer">
-        <div>davidchi@tamu.edu</div>
-        <a href="https://www.linkedin.com/in/david-chi-41392521a/">LinkedIn</a>
-        <a href="https://github.com/davidchi31415">GitHub</a>
+        <div class="button">
+            <a href="mailto:davidchi@tamu.edu">davidchi@tamu.edu</a>
+        </div>
+        <div class="button">
+            <a href="https://www.linkedin.com/in/david-chi-41392521a/">LinkedIn</a>
+        </div>
+        <div class="button">
+            <a href="https://github.com/davidchi31415">GitHub</a>
+        </div>
+        <div class="button">
+            <button onclick="toggleStyleSheet()">
+                Switch Style
+            </button>
+        </div>
     </div>
     <script src="index.js"></script>
+    <script src="../toggle_style.js"></script>
 </body>
 </html>
