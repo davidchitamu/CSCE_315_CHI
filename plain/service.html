@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../styles.css" id="mainStyleSheet"></link>
+    <link rel="stylesheet" type="text/css" href="styles.css" id="mainStyleSheet"></link>
     <title>David Chi</title>
 </head>
 <body>
@@ -12,40 +12,40 @@
     <div class="title-section">
         <div class="title-welcome">
             <div class="ribbon-left"></div>
-            WELCOME TO
+            WHOM DOES
             <div class="ribbon-right"></div>
         </div>
-        <div class="title-name">DAVID CH<span class="title-highlight">I'S LAND</span></div>
+        <div class="title-name">DAVID CHI<span class="title-highlight"> SERVE?</span></div>
     </div>
 
     <div class="navbar">
+        <div class="button" onclick="location.href = 'index.html';">
+            <a href="index.html">HOME</a>
+        </div>
+        <div class="button" onclick="location.href = 'portfolio.html';">
+            <a href="portfolio.html">PROJECTS</a>
+        </div>
+        <div class="button" onclick="location.href = 'resume.html';">
+            <a href="resume.html">QUALIFICATIONS</a>
+        </div>
         <div class="button-disabled">
-            <a href="../landing-page/index.html">HOME</a>
+            <a href="service.html">SERVICE</a>
         </div>
-        <div class="button" onclick="location.href = '../technical-page/index.html';">
-            <a href="../technical-page/index.html">PROJECTS</a>
-        </div>
-        <div class="button" onclick="location.href = '../qual-page/index.html';">
-            <a href="../qual-page/index.html">QUALIFICATIONS</a>
-        </div>
-        <div class="button" onclick="location.href = '../service-page/index.html';">
-            <a href="../service-page/index.html">SERVICE</a>
-        </div>
-        <div class="button" onclick="location.href = '../gpt-page/index.html';">
-            <a href="../gpt-page/index.html">FUN FACTS</a>
+        <div class="button" onclick="location.href = 'fun_facts.html';">
+            <a href="fun_facts.html">FUN FACTS</a>
         </div>
     </div>
 
     <div class="content">
-        <div class="landing-island-container">     
-            <img class="island" src="../static/island.png">
-            <div class="personal-photo-container">
-                <img class="personal-photo" src="../static/selfie.jpg">
+        <div class="island-container" id="datathon">
+            <div class="island-title">
+                TAMU Datathon
             </div>
-            <p class="about-me">
-                <strong>Howdy</strong>! I'm David, an undergrad at Texas A&M studying
-                <i>Comp. Sci</i> and <i>Applied Math</i>. My interests lie in using
-                ML/AI to solve problems in <i>chemistry</i> and <i>biology</i>.
+            <p>
+                I am part of the Development team of the TAMU Datathon, where I work to build
+                the website and applications used for a university-sponsored, data-science-focused hackathon
+                that takes place annually. I am committed to helping the community have an enjoyable and productive
+                time in this event, and that requires active contribution and collaboration with other team members.
             </p>
         </div>
     </div>
@@ -85,6 +85,6 @@
         </div>
     </div>
     <script src="index.js"></script>
-    <script src="../toggle_style.js"></script>
+    <script src="toggle_style.js"></script>
 </body>
 </html>
