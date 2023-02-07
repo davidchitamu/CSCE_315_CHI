@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: fit-content;
+    min-height: 100%;
+    background-color: #111111;
+    color: #f3f3f3;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Rubik', sans-serif;
+    padding-top: 2em;
+}
+
+.title-section {
+    align-self: flex-start;
+    margin-left: 3em;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.button-disabled {
+    background-color: #eeeeee;
+    opacity: 0.4;
+}
+.button-disabled a {
+    cursor: default;
+}
+.button {
+    background-color: #eeeeee;
+}
+.button button {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.navbar {
+    display: flex;
+    gap: 1.5em;
+}
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+.navbar > .button {
+    border: solid 2px black;
+    border-radius: 2px;
+    padding: 0.5em;
+    cursor: pointer;
+}
+.navbar > .button-disabled {
+    border: solid 2px black;
+    border-radius: 2px;
+    padding: 0.5em;
+}
+.navbar > .button:hover {
+    background-color: #aaaaaa;
+    color: #aa0000;
+    transition: background-color 0.2s ease;
+}
+.navbar > .button:hover > a {
+    color: #aa0000;
+    transition: color 0.2s ease;
+}
+
+.navbar {
+    align-self: flex-end;
+    margin-right: 3em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.island {
+    display: none;
+}
+
+.landing-island-container {
+    margin: 0 auto;
+    margin-top: 3.5em;
+    width: 30em;
+    padding: 1em;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px gold;
+    border-radius: 3px;
+    box-shadow: 5px 10px 10px goldenrod;
+}
+
+.island-container {
+    padding: 1em;
+    margin: 3.5em auto;
+    max-width: 50em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px gold;
+    border-radius: 3px;
+    box-shadow: 5px 10px 10px goldenrod;
+}
+
+.island-container li {
+    margin-left: 1em;
+}
+
+.about-me {
+    margin-top: 1em;
+    font-size: 1.2rem;
+}
+
+.island-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 0.5em;
+}
+
+.personal-photo-container {
+    border: solid 5px black;
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.personal-photo {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.footer {
+    position: fixed;
+    bottom: 20em;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    gap: 1em;
+}
+.footer > .button {
+    cursor: pointer;
+    padding: 0.3em 0.5em 0.7em;
+    border: solid 2px black;
+    border-radius: 2px;
+}
+.footer > .button:hover {
+    background-color: #aaaaaa;
+    color: #aa0000;
+    transition: background-color 0.2s ease;
+}
+.footer a {
+    text-decoration: none;
+    color: black;
+}
+.footer > .button:hover > a {
+    color: #aa0000;
+    transition: color 0.2s ease;
+}
